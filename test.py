@@ -1,0 +1,1 @@
+print("AI Career Copilot setup successful!")
