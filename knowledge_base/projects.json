@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-07-13",
+  "projects": [
+    {
+      "id": "PROJECT_001",
+      "name": "Pet Adoption and Rescue Management Portal",
+      "short_description": "",
+      "problem_statement": "",
+      "solution": "",
+      "technologies": [],
+      "features": [],
+      "architecture": {},
+      "challenges": [],
+      "solutions": [],
+      "results": [],
+      "metrics": {},
+      "related_skills": [],
+      "related_experience": [],
+      "github": "",
+      "demo": "",
+      "interview_notes": {},
+      "metadata": {
+        "status": "active"
+      }
+    }
+  ]
+}

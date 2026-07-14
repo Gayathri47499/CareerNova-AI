@@ -1,0 +1,16 @@
+import streamlit as st
+
+
+def analytics_progress(
+
+    title,
+
+    score
+
+):
+
+    st.write(title)
+
+    st.progress(score/100)
+
+    st.caption(f"{score}%")

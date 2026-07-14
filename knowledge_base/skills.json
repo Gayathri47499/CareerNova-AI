@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-07-13",
+  "skills": [
+    {
+      "id": "SKILL_001",
+      "name": "Python",
+      "category": "Programming",
+      "level": "Advanced",
+      "confidence": 95,
+      "description": "Primary programming language used for AI, backend development, automation, and data science.",
+      "evidence": [
+        "Built AI Career Copilot",
+        "Developed Pet Adoption and Rescue Portal",
+        "Created Hotel Booking Chatbot",
+        "Implemented Air Writing Gesture Recognition"
+      ],
+      "related_projects": [
+        "PROJECT_001",
+        "PROJECT_002",
+        "PROJECT_003",
+        "PROJECT_004"
+      ],
+      "related_experience": [
+        "EXP_001"
+      ],
+      "related_certifications": [
+        "CERT_001"
+      ],
+      "related_skills": [
+        "SKILL_002",
+        "SKILL_010",
+        "SKILL_015"
+      ],
+      "last_used": "2026-07",
+      "metadata": {
+        "status": "active"
+      }
+    }
+  ]
+}
