@@ -230,10 +230,36 @@ AI Architect
 
         st.subheader("🤖 CareerNova AI")
 
-        st.markdown(
-            f"### {result['title']}"
-        )
+# ----------------------------------------
+# Handle both old and new response formats
+# ----------------------------------------
 
-        st.write(
-            result["response"]
-        )
+        if isinstance(result, dict):
+
+         if "title" in result:
+
+           st.markdown(f"### {result['title']}")
+
+           st.write(result["response"])
+
+         elif "intent" in result:
+
+          st.markdown(f"### {result['intent'].title()} Agent")
+
+          response = result.get("result")
+
+          if isinstance(response, dict):
+
+              st.json(response)
+
+          else:
+
+              st.write(response)
+
+         else:
+
+          st.write(result)
+
+        else:
+
+          st.write(result)

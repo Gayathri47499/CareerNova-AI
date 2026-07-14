@@ -3,14 +3,12 @@ from orchestrator.intent_router import IntentRouter
 from agents.resume_agent import ResumeAgent
 from agents.ats_agent import ATSAgent
 from agents.chat_agent import ChatAgent
+from agents.career_agent import CareerAgent
 
 
 class AgentOrchestrator:
-
     """
     Central AI Router
-
-    Every AI request passes through here.
     """
 
     def __init__(self):
@@ -22,6 +20,8 @@ class AgentOrchestrator:
         self.ats_agent = ATSAgent()
 
         self.chat_agent = ChatAgent()
+
+        self.career_agent = CareerAgent()
 
     def execute(
 
@@ -41,9 +41,9 @@ class AgentOrchestrator:
 
         intent = self.router.route(question)
 
-        # -------------------------
-        # Resume
-        # -------------------------
+        # -----------------------------
+        # Resume Agent
+        # -----------------------------
 
         if intent == "resume":
 
@@ -57,15 +57,15 @@ class AgentOrchestrator:
 
             return {
 
-                "intent": intent,
+                "title": "📄 Resume Analysis",
 
-                "answer": answer
+                "response": answer
 
             }
 
-        # -------------------------
-        # ATS
-        # -------------------------
+        # -----------------------------
+        # ATS Agent
+        # -----------------------------
 
         elif intent == "ats":
 
@@ -79,15 +79,37 @@ class AgentOrchestrator:
 
             return {
 
-                "intent": intent,
+                "title": "🎯 ATS Intelligence",
 
-                "answer": answer
+                "response": answer
 
             }
 
-        # -------------------------
-        # Default Chat
-        # -------------------------
+        # -----------------------------
+        # Career Agent
+        # -----------------------------
+
+        elif intent == "career":
+
+            answer = self.career_agent.generate_career_report(
+
+                resume,
+
+                question
+
+            )
+
+            return {
+
+                "title": "🚀 Career Report",
+
+                "response": answer
+
+            }
+
+        # -----------------------------
+        # Chat Agent
+        # -----------------------------
 
         else:
 
@@ -107,8 +129,8 @@ class AgentOrchestrator:
 
             return {
 
-                "intent": "chat",
+                "title": "🤖 CareerNova AI",
 
-                "answer": answer
+                "response": answer
 
             }
