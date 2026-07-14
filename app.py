@@ -1,4 +1,8 @@
 import streamlit as st
+from data.initialize_database import initialize_database
+
+initialize_database()
+
 
 # =====================================================
 # PAGE CONFIG (MUST BE FIRST STREAMLIT COMMAND)
