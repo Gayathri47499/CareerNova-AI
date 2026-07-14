@@ -19,3 +19,4 @@ sqlite-utils>=3.38
 
 pandas>=2.2.3
 numpy>=2.1.2
+PyMuPDF>=1.24.10
