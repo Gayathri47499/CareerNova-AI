@@ -16,9 +16,9 @@
 
 ### 🎯 AI Career Assistant for Resume Intelligence, ATS Optimization, Interview Preparation & Career Growth
 
-**🌐 Live Demo:** https://YOUR-STREAMLIT-LINK.streamlit.app
+**🌐 Live Demo:** https://careernova-ai-d3afftlejyfyha3qrbxtpk.streamlit.app/
 
-**💻 GitHub:** https://github.com/YOUR_USERNAME/CareerNova-AI
+**💻 GitHub:** https://github.com/Gayathri47499/CareerNova-AI
 
 </div>
 
@@ -333,7 +333,7 @@ CareerNova-AI/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/CareerNova-AI.git
+git clone https://github.com/Gayathri47499/CareerNova-AI.git
 ```
 
 Go inside
@@ -451,10 +451,12 @@ B.Tech Data Science & AI
 AI Engineer | Cloud Enthusiast | Python Developer
 
 GitHub:
-https://github.com/YOUR_USERNAME
+https://github.com/Gayathri47499
 
 LinkedIn:
-https://linkedin.com/in/YOUR_LINKEDIN
+www.linkedin.com/in/gayathri-sanjana-47499gs
+
+
 
 ---
 
